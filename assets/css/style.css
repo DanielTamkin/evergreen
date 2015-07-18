@@ -10,3 +10,9 @@
 		color:#000;
 		text-decoration:underline;
 	}
+/*hero*/
+section.hero{
+	max-height:600px;
+	width:100%;
+
+}
