@@ -49,6 +49,7 @@
 		width:100%;
 	}
 /*> shim*/
-	section.shim{
+	#site-shim{
+		width:100%;
 		background:rgba(187, 187, 187, 0.9);
 	}
