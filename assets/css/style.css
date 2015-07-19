@@ -22,17 +22,26 @@
 		width:100%;
 		background:#fff;
 		box-sizing:border-box;
+
   }
 	nav.site h1{
 		display:inline-block;
 		float:left;
+		font-size:2em;
+		font-family:'Lato-Black';
 	}
 	nav.site ul{
 		float:right;
 	}
-	nav.site ul li{
+	#site-nav ul li{
 		margin:0 5px;
-		padding:0 4px;
+		padding:0.5em;
+		line-height:80px;
+		box-sizing:border-box;
 		display:inline-block;
-		float:right;
+		color:rgba(255, 255, 255, 0.6);
+		font-family:'Lato';
+	}
+	#site-nav ul li:hover{
+		color:#fff;
 	}
