@@ -1,4 +1,19 @@
 {{!loop template}}
-{{#foreach posts}}
-
-{{/foreach}}
+<section id="site-shim" class="Container-Medium">
+  {{#foreach posts}}
+    <article>
+      <header>
+        <h1>{{title}}</h1>
+        <section class="excerpt">
+          <p>{{excerpt words="40"}}</p>
+        </section>
+      </header>
+      <section class="author">
+        <div class="image"><img src="{{author.image}}"/></div>
+        <div>
+          
+        </div>
+      </section>
+    </article>
+  {{/foreach}}
+</section>
