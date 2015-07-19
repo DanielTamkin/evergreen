@@ -11,8 +11,28 @@
 		text-decoration:underline;
 	}
 /*hero*/
-section.hero{
-	max-height:600px;
-	width:100%;
+	section.hero{
+		max-height:600px;
+		width:100%;
 
-}
+	}
+/*> navigation*/
+  nav.site{
+	  padding:1em;
+		width:100%;
+		background:#fff;
+		box-sizing:border-box;
+  }
+	nav.site h1{
+		display:inline-block;
+		float:left;
+	}
+	nav.site ul{
+		float:right;
+	}
+	nav.site ul li{
+		margin:0 5px;
+		padding:0 4px;
+		display:inline-block;
+		float:right;
+	}

@@ -1,9 +1,11 @@
 {{! navigation template}}
-<nav class="Site">
-  <h1>{{@blog.title}}</h1>
-  <ul>
-    {{#foreach navigation}}
-      <a href="{{url absolute="true"}}"><li>{{label}}</li></a>
-    {{/foreach}}
-  </ul>
+<nav class="site">
+  <div class="Container-Large">
+    <h1>{{@blog.title}}</h1>
+    <ul>
+      {{#foreach navigation}}
+        <a href="{{url absolute="true"}}"><li>{{label}}</li></a>
+      {{/foreach}}
+    </ul>
+  </div>
 </nav>
