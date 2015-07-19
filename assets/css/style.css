@@ -37,15 +37,14 @@
 	nav.site ul{
 		float:right;
 	}
-	#site-nav ul li{
-		margin:0 5px;
+	nav.site ul li{
+		margin:4px 5px;
 		padding:0.5em;
-		line-height:80px;
 		box-sizing:border-box;
 		display:inline-block;
-		color:rgba(255, 255, 255, 0.6);
+		color:rgba(0, 0, 0, 0.6);
 		font-family:'Lato';
 	}
-	#site-nav ul li:hover{
-		color:#fff;
+	nav.site ul li:hover{
+		color:#000;
 	}
