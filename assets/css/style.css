@@ -50,11 +50,65 @@
 	}
 /*> shim*/
 	#site-shim{
-		min-height:400px;
+		min-height: 500px;
 		width:100%;
 		background:#fff;
 		box-shadow: 0px 0px 10px #000;
 		z-index:9999;
+	}
+/*> loop*/
+	#loop{
+		margin-bottom:11px;
+	}
+	#loop article{
+		margin-bottom:9px;
+		position:relative;
+		display:inline-block;
+	}
+	#loop article header{
+		padding:0.6em;
+		box-sizing: border-box;
+		position:relative;
+		background:#263238;
+		color:#fff;
+	}
+	#loop article header h1{
+		font-family:'Lato-Bold';
+	}
+	#loop article header.image h1{
+
+	}
+	#loop article header p{
+		margin-top:16px;
+		color:rgba(255, 255, 255, 0.43);
+		line-height:1.4;
+		font-size:1em;
+
+	}
+	#loop article section.author{
+		padding:0.6em;
+		position:relative;
+		box-sizing: border-box;
+	}
+	#loop article section.author .image{
+		margin-right:10px;
+		height:54px;
+		width:54px;
+		float:left;
+		border-radius:100%;
+		overflow:hidden;
+	}
+	#loop article section.author img{
+		height:54px;
+		width:54px;
+	}
+	#loop article section.author p{
+		margin-top:9px;
+		float:left;
+		font-family: 'Lato';
+	}
+	#loop article section.author p b{
+		font-family: 'Lato-Black';
 	}
 /*> footer*/
 	#site-footer{

@@ -1,18 +1,24 @@
 {{!loop template}}
-<section id="site-shim" class="Container-Medium">
+<section id="loop">
   {{#foreach posts}}
-    <article>
-      <header>
-        <h1>{{title}}</h1>
-        <section class="excerpt">
-          <p>{{excerpt words="40"}}</p>
-        </section>
-      </header>
+    <article class="loop">
+      {{#if image}}
+        <header class="image">
+          <a href="{{url absolute="true"}}"><h1>{{title}}</h1></a>
+        </header>
+      {{else}}
+        <header>
+          <a href="{{url absolute="true"}}"><h1>{{title}}</h1></a>
+          <section class="excerpt">
+            <p>{{excerpt words="40"}}</p>
+          </section>
+        </header>
+      {{/if}}
       <section class="author">
-        <div class="image"><img src="{{author.image}}"/></div>
-        <div>
-          
-        </div>
+        {{#if author.image}}
+          <div class="image"><img src="{{author.image}}"/></div>
+        {{/if}}
+        <p><b>{{author.name}}</b>, </br>{{date format="MMMM DD, YYYY"}}</p>
       </section>
     </article>
   {{/foreach}}
