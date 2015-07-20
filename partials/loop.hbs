@@ -3,23 +3,25 @@
   {{#foreach posts}}
     <article class="loop">
       {{#if image}}
-        <header class="image">
-          <a href="{{url absolute="true"}}"><h1>{{title}}</h1></a>
+        <header class="image" style="background: url({{image}}) no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+          <div class="wrapper">
+            <a href="{{url absolute="true"}}"><h1>{{title}}</h1></a>
+          </div>
         </header>
       {{else}}
         <header>
           <a href="{{url absolute="true"}}"><h1>{{title}}</h1></a>
           <section class="excerpt">
-            <p>{{excerpt words="40"}}</p>
+            <p>{{excerpt words="0"}}</p>
           </section>
         </header>
       {{/if}}
-      <section class="author">
+      <footer class="author">
         {{#if author.image}}
           <div class="image"><img src="{{author.image}}"/></div>
         {{/if}}
         <p><b>{{author.name}}</b>, </br>{{date format="MMMM DD, YYYY"}}</p>
-      </section>
+      </footer>
     </article>
   {{/foreach}}
 </section>
