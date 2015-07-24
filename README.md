@@ -1,2 +1,2 @@
 # evergreen
-a Material Design ghost theme, with a eCommerce touch
+a Material Design ghost theme, with an eCommerce touch
