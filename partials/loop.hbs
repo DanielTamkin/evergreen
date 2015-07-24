@@ -16,11 +16,18 @@
           </section>
         </header>
       {{/if}}
-      <footer class="author">
-        {{#if author.image}}
-          <div class="image"><img src="{{author.image}}"/></div>
-        {{/if}}
-        <p><b>{{author.name}}</b>, </br>{{date format="MMMM DD, YYYY"}}</p>
+      <footer>
+        <div class="author">
+          {{#if author.image}}
+            <div class="image"><img src="{{author.image}}"/></div>
+          {{/if}}
+          <p><b>{{author.name}}</b>, </br>{{date format="MMMM DD, YYYY"}}</p>
+        </div>
+        <div class="tags">
+          <p><i>
+            {{tags separator=" & "}}
+          </i></p>
+        </div>
       </footer>
     </article>
   {{/foreach}}
@@ -29,6 +36,6 @@
   $offset = $("article.loop").first().outerHeight();
   $("#site-shim").shimThis({
     ontop: 'section.hero',
-    offset: ''+$offset+'px'
+    offset: $offset+'px'
   });
 </script>

@@ -30,7 +30,7 @@
 						ontopHeight 			= $($data.ontop).height(),
 						elementShim 			= 0;
 				if($data.offset == "0"){
-					$data.offset = (elementHeight/2)/1.5;
+					$data.offset = "25%";
 					$data.offset = $data.offset+"px";
 				}
 				console.log("elementHeight="+elementHeight);

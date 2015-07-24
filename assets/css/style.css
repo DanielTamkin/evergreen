@@ -50,6 +50,7 @@
 	}
 /*> shim*/
 	#site-shim{
+		margin-bottom:1em;
 		min-height: 500px;
 		width:100%;
 		background:#fff;
@@ -100,11 +101,11 @@
 
 	}
 	#loop article footer{
-		padding:0.4em;
-		padding-left:0.6em;
+		padding:0.4em 0.6em;
 		position:relative;
 		box-sizing: border-box;
 		display:inline-block;
+		width:100%;
 	}
 	#loop article footer .image{
 		margin-right:10px;
@@ -125,6 +126,18 @@
 	}
 	#loop article footer p b{
 		font-family: 'Lato-Black';
+	}
+	#loop article footer p i{
+		opacity:0.6;
+	}
+	#loop article footer .author{
+		display:inline-block;
+		float:left;
+	}
+	#loop article footer .tags {
+		margin-top:9px;
+		display:inline-block;
+		float:right;
 	}
 /*> footer*/
 	#site-footer{
