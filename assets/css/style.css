@@ -61,12 +61,12 @@
 		margin-bottom:11px;
 	}
 	#loop article{
-		margin-bottom:9px;
 		width:100%;
 		display:inline-block;
 	}
 	#loop article header{
 		padding:0.6em;
+		padding-bottom:9px;
 		box-sizing: border-box;
 		position:relative;
 		width:100%;
@@ -100,9 +100,11 @@
 
 	}
 	#loop article footer{
-		padding:0.6em;
+		padding:0.4em;
+		padding-left:0.6em;
 		position:relative;
 		box-sizing: border-box;
+		display:inline-block;
 	}
 	#loop article footer .image{
 		margin-right:10px;
