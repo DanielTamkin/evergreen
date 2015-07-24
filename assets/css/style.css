@@ -139,6 +139,26 @@
 		display:inline-block;
 		float:right;
 	}
+/*> pagination*/
+	#pagination{
+		margin:1em 0;
+		padding:1em 0;
+		box-sizing:border-box;
+		width:100%;
+	}
+	#pagination h3{
+		width:100%;
+		text-align:center;
+	}
+	#pagination ul{
+		margin:6px 0;
+	}
+	#pagination li.prev{
+		float:left;
+	}
+	#pagination li.next{
+		float:right;
+	}
 /*> footer*/
 	#site-footer{
 		margin:0.9em 0;

@@ -25,12 +25,15 @@
         </div>
         <div class="tags">
           <p><i>
-            {{tags separator=" & "}}
+            {{tags separator="  "}}
           </i></p>
         </div>
       </footer>
     </article>
   {{/foreach}}
+  {{#if posts}}
+    {{pagination}}
+  {{/if}}
 </section>
 <script>
   $offset = $("article.loop").first().outerHeight();
