@@ -151,7 +151,8 @@
 		text-align:center;
 	}
 	#pagination ul{
-		margin:6px 0;
+		padding:11px 1em;
+		box-sizing:border-box;
 	}
 	#pagination li.prev{
 		float:left;
