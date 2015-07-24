@@ -1,5 +1,5 @@
 /*shimThis.js - by Danieltamkin*/
-/*center an element to its parent.*/
+/*shim an element to its top element*/
 (function( $ ) {
 	$.fn.shimThis = function(data) {
     if(data == undefined){
@@ -8,5 +8,6 @@
 		else{
 			$data = data;
 		}
+
   };
 }( jQuery ));
