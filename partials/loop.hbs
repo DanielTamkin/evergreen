@@ -25,3 +25,10 @@
     </article>
   {{/foreach}}
 </section>
+<script>
+  $offset = $("article.loop").first().outerHeight();
+  $("#site-shim").shimThis({
+    ontop: 'section.hero',
+    offset: ''+$offset+'px'
+  });
+</script>
