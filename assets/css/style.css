@@ -61,16 +61,23 @@
 		box-sizing: border-box;
 		position:relative;
 	}
+	.shim header h1{
+		font-family:'Lato-Bold';
+	}
+	.shim header p{
+		opacity:0.6;
+	}
 	.shim header.image{
 		padding:0;
 		height:360px;
+		color:#fff;
 	}
 	.shim header .wrapper{
 		padding:0.6em;
 		box-sizing: border-box;
 		height:100%;
 		width:100%;
-		background:rgba(20,20,20,0.4);
+		background:rgba(20,20,20,0.3);
 	}
 	.shim footer{
 		padding:0.4em 0.6em;
