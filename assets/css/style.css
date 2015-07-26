@@ -158,8 +158,25 @@
 		width:54px;
 	}
 /*> post*/
-	#post{
-
+	#post footer{
+		margin-bottom:-2px;
+		border-bottom:1px solid #999797;
+	}
+	#post-content{
+		padding:1.6em 0.6em;
+	}
+	#post-content .featured{
+		padding:1em;
+	}
+	#post-content .featured li{
+		font-size:14px;
+		font-family:'Lato-Black';
+	}
+	#post-content .featured .prev{
+		float:left;
+	}
+	#post-content .featured .prev{
+		float:right;
 	}
 /*> loop*/
 	#loop{
