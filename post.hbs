@@ -1,2 +1,15 @@
 {{!< default}}
 {{! post template}}
+{{> "shim"}}
+{{#post}}
+  <section id="post-content">
+    {{content}}
+  <section>
+{{/post}}
+<script>
+  $offset = $("#post").outerHeight();
+  $("#site-shim").shimThis({
+    ontop: 'section.hero',
+    offset: $offset+'px'
+  });
+</script>

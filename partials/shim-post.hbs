@@ -1,0 +1,29 @@
+{{#post}}
+<section id="post" class="shim">
+  {{#if image}}
+    <header class="image" style="background: url({{image}}) no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+      <div class="wrapper">
+        <div class="bottom">
+          <h1>{{title}}</h1>
+        </div>
+      </div>
+    </header>
+  {{/if}}
+  <footer>
+    <div class="left">
+      {{#author}}
+        {{#if image}}
+          <div class="image"><img src="{{image}}"/></div>
+        {{/if}}
+        <p><a href="{{url}}">{{name}}</a>, </br>
+      {{/author}}
+      {{date format="MMMM DD, YYYY"}}</p>
+    </div>
+    <div class="right">
+      <p>
+        {{tags separator="  "}}
+      </p>
+    </div>
+  </footer>
+</section>
+{{/post}}

@@ -3,5 +3,9 @@
   {{else}}
   {{#is "author"}}
     {{> "shim-author"}}
+    {{else}}
+    {{#is "post"}}
+      {{> "shim-post"}}
+    {{/is}}
   {{/is}}
 {{/is}}

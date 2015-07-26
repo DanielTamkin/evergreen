@@ -82,6 +82,11 @@
 	.shim header .center{
 		display:inline-block;
 	}
+	.shim header .bottom{
+		position:absolute;
+		bottom:0.6em;
+		left:0.6em;
+	}
 	.shim footer{
 		padding:0.4em 0.6em;
 		position:relative;
@@ -101,6 +106,18 @@
   .shim footer .left{
 		display:inline-block;
 		float:left;
+	}
+  .shim footer .left .image{
+		margin-right:10px;
+		height:54px;
+		width:54px;
+		float:left;
+		border-radius:100%;
+		overflow:hidden;
+	}
+  .shim footer .left img{
+		height:54px;
+		width:54px;
 	}
   .shim footer .left p a{
 		font-family: 'Lato-Black';
@@ -140,6 +157,10 @@
 		height:54px;
 		width:54px;
 	}
+/*> post*/
+	#post{
+
+	}
 /*> loop*/
 	#loop{
 		margin-bottom:11px;
@@ -149,8 +170,7 @@
 		display:inline-block;
 	}
 	#loop article header{
-		padding:0.6em;
-		padding-bottom:9px;
+		padding:1.6em 0.6em;
 		box-sizing: border-box;
 		position:relative;
 		width:100%;
