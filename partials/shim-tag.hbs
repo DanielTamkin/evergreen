@@ -1,5 +1,5 @@
-{{#tag}}
-  <section id="tag">
+<section id="tag" class="shim">
+  {{#tag}}
     {{#if image}}
       <header class="image" style="background: url({{image}}) no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
         <div class="wrapper">
@@ -7,12 +7,12 @@
         </div>
       </header>
     {{else}}
-      <header>
-        <a href="{{url absolute="true"}}"><h1>{{name}}</h1></a>
-        <section class="excerpt">
-          <p>{{excerpt words="0"}}</p>
-        </section>
-      </header>
-    {{/if}}
-  </section>
-{{/tag}}
+      {{/if}}
+  {{/tag}}
+  <footer>
+    <p>{{pagination.total}} posts</p>
+  </footer>
+</section>
+<script>
+  $("#tag a").centerThis("#tag header");
+</script>

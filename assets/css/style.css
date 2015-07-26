@@ -57,6 +57,46 @@
 		box-shadow: 0px 0px 10px #000;
 		z-index:9999;
 	}
+	.shim header{
+		box-sizing: border-box;
+		position:relative;
+	}
+	.shim header.image{
+		padding:0;
+		height:360px;
+	}
+	.shim header .wrapper{
+		padding:0.6em;
+		box-sizing: border-box;
+		height:100%;
+		width:100%;
+		background:rgba(20,20,20,0.4);
+	}
+	.shim footer{
+		padding:0.4em 0.6em;
+		position:relative;
+		box-sizing: border-box;
+		display:inline-block;
+		width:100%;
+	}
+	.shim footer p{
+		margin-top:9px;
+		float:left;
+		font-family: 'Lato';
+	}
+	.shim footer p i{
+		opacity:0.6;
+	}
+	.shim footer p b{
+		font-family: 'Lato-Black';
+	}
+/*> tag*/
+	#tag .wrapper h1{
+		display:inline-block;
+	}
+	#tag footer{
+		height:54px;
+	}
 /*> loop*/
 	#loop{
 		margin-bottom:11px;
