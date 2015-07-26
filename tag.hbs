@@ -2,20 +2,7 @@
 {{! tag template}}
 {{#tag}}
 <section id="tag">
-  {{#if image}}
-    <header class="image" style="background: url({{image}}) no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
-      <div class="wrapper">
-        <a href="{{url absolute="true"}}"><h1>{{name}}</h1></a>
-      </div>
-    </header>
-  {{else}}
-    <header>
-      <a href="{{url absolute="true"}}"><h1>{{name}}</h1></a>
-      <section class="excerpt">
-        <p>{{description}}</p>
-      </section>
-    </header>
-  {{/if}}
+  {{> "shim"}}
 </section>
 {{/tag}}
 {{> "loop"}}

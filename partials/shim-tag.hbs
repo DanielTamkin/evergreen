@@ -1,0 +1,16 @@
+{{#tag}}
+  {{#if image}}
+    <header class="image" style="background: url({{image}}) no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+      <div class="wrapper">
+        <a href="{{url absolute="true"}}"><h1>{{title}}</h1></a>
+      </div>
+    </header>
+  {{else}}
+    <header>
+      <a href="{{url absolute="true"}}"><h1>{{title}}</h1></a>
+      <section class="excerpt">
+        <p>{{excerpt words="0"}}</p>
+      </section>
+    </header>
+  {{/if}}
+{{/tag}}
