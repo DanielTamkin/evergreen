@@ -1,23 +1,44 @@
 <section id="author" class="shim">
   {{#author}}
-    {{#if image}}
-      <header class="image" style="background: url({{image}}) no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+    {{#if cover}}
+      <header class="image" style="background: url({{cover}}) no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
         <div class="wrapper">
           <div class="center">
+            {{#if image}}
+              <div class="image"><img src="{{image}}"/></div>
+            {{/if}}
             <a href="{{url absolute="true"}}"><h1>{{name}}</h1></a>
-            {{#if description}}
-              <p>{{description}}</p>
+            {{#if bio}}
+              <p>{{bio}}</p>
             {{/if}}
           </div>
         </div>
       </header>
     {{else}}
-      {{/if}}
+
+    {{/if}}
   {{/author}}
   <footer>
-    <p>{{pagination.total}} posts</p>
+    <div class="left">
+      <p>{{pagination.total}} posts</p>
+    </div>
+    <div class="right">
+      <p>
+        {{#if location}}
+          {{#if website}}
+              {{location}},{{website}}
+            {{else}}
+            {{location}}
+          {{/if}}
+          {{else}}
+          {{#if website}}
+            {{website}}
+          {{/if}}
+        {{/if}}
+      </p>
+    </div>
   </footer>
 </section>
 <script>
-  $("#tag .center").centerThis("#tag header");
+  $("#author .center").centerThis("#author header");
 </script>

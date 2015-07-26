@@ -1,2 +1,11 @@
 {{!< default}}
 {{! author template}}
+{{> "shim"}}
+{{> "loop"}}
+<script>
+  $offset = $("#author").outerHeight();
+  $("#site-shim").shimThis({
+    ontop: 'section.hero',
+    offset: $offset+'px'
+  });
+</script>
