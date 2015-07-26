@@ -18,10 +18,13 @@
       {{/if}}
       <footer>
         <div class="author">
-          {{#if author.image}}
-            <div class="image"><img src="{{author.image}}"/></div>
-          {{/if}}
-          <p><b>{{author.name}}</b>, </br>{{date format="MMMM DD, YYYY"}}</p>
+          {{#author}}
+            {{#if image}}
+              <div class="image"><img src="{{image}}"/></div>
+            {{/if}}
+            <p><a href="{{url}}">{{name}}</a>, </br>
+          {{/author}}
+          {{date format="MMMM DD, YYYY"}}</p>
         </div>
         <div class="tags">
           <p><i>
