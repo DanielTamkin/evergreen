@@ -36,13 +36,7 @@
   {{/if}}
 </section>
 {{#is "tag"}}
-  <script>
-    $offset = $("article.loop").first().outerHeight();
-    $("#site-shim").shimThis({
-      ontop: 'section.hero',
-      offset: $offset+'px'
-    });
-  </script>
+
 {{else}}
 <script>
   $offset = $("article.loop").first().outerHeight();

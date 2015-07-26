@@ -1,8 +1,11 @@
 {{!< default}}
 {{! tag template}}
-{{#tag}}
-<section id="tag">
-  {{> "shim"}}
-</section>
-{{/tag}}
+{{> "shim"}}
 {{> "loop"}}
+<script>
+  /*$offset = $("article.loop").first().outerHeight();
+  $("#site-shim").shimThis({
+    ontop: 'section.hero',
+    offset: $offset+'px'
+  });*/
+</script>
