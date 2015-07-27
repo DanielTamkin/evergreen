@@ -5,14 +5,12 @@
   <section id="post-content">
     {{content}}
     <section class="featured">
-      <ul>
-        {{#next_post}}
-          <a href="{{url absolute="true"}}"><li class="next">next post</li></a>
-        {{/next_post}}
-        {{#prev_post}}
-          <a href="{{url absolute="true"}}"><li class="prev">previous post</li></a>
-        {{/prev_post}}
-      </ul>
+      {{#next_post}}
+        <a href="{{url absolute="true"}}"><div class="next">next post</div></a>
+      {{/next_post}}
+      {{#prev_post}}
+        <a href="{{url absolute="true"}}"><div class="prev">previous post</div></a>
+      {{/prev_post}}
     </section>
   </section>
 {{/post}}
