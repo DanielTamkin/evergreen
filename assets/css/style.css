@@ -58,12 +58,30 @@
 		z-index:9999;
 	}
 	.shim header{
+		padding:1em 0.6em;
 		box-sizing: border-box;
 		position:relative;
 		background:#fff;
 	}
 	.shim header h1{
+		color:#000;
 		font-family:'Lato-Bold';
+		font-size:4.6em;
+	}
+	.shim header.image h1{
+		font-family:'Lato-Black';
+		font-size:3em;
+		color:#fff;
+	}
+	.shim header hr{
+		height:6px;
+		width:100%;
+		border:none;
+		border-bottom:2px solid rgba(0, 0, 0, 0.37);
+	}
+	.shim header hr.thick{
+		height:9px;
+		border-bottom:9px solid #000;
 	}
 	.shim header p{
 		opacity:0.6;
