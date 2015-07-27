@@ -6,12 +6,12 @@
     {{content}}
     <section class="featured">
       <ul>
-        {{#prev_post}}
-          <a href="{{url absolute="true"}}"><li class="prev">previous post</li></a>
-        {{/prev_post}}
         {{#next_post}}
           <a href="{{url absolute="true"}}"><li class="next">next post</li></a>
         {{/next_post}}
+        {{#prev_post}}
+          <a href="{{url absolute="true"}}"><li class="prev">previous post</li></a>
+        {{/prev_post}}
       </ul>
     </section>
   </section>
