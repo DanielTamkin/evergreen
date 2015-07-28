@@ -48,6 +48,9 @@
 		height:90%;
 		width:100%;
 	}
+	section.hero-noimage{
+		background:rgba(0, 0, 0, 0.2);
+	}
 /*> shim*/
 	#site-shim{
 		margin-bottom:1em;

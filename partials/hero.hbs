@@ -1,3 +1,8 @@
 {{navigation}}
-<section class="hero" style="background: url({{@blog.cover}}) no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
-</section>
+{{#if @blog.cover}}
+  <section class="hero" style="background: url({{@blog.cover}}) no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+  </section>
+  {{else}}
+  <section class="hero hero-noimage">
+  </section>
+{{/if}}
