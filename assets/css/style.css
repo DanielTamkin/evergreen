@@ -154,8 +154,14 @@
 		opacity:0.6;
 	}
 /*> tag*/
+	#tag{
+		text-align:center;
+	}
 	#tag .wrapper h1{
 		display:inline-block;
+	}
+	#tag header.noimage{
+		padding:3em 0.6em;
 	}
 	#tag footer{
 		height:54px;
