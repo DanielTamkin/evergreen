@@ -15,7 +15,15 @@
         </div>
       </header>
     {{else}}
-
+      <header class="noimage">
+        {{#if image}}
+          <div class="image"><img src="{{image}}"/></div>
+        {{/if}}
+        <a href="{{url absolute="true"}}"><h1>{{name}}</h1></a>
+        {{#if bio}}
+          <p>{{bio}}</p>
+        {{/if}}
+      </header>
     {{/if}}
   {{/author}}
   <footer>
