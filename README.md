@@ -11,20 +11,21 @@ if you see a bug or have a brilliant idea on how to improve Evergreen, [create a
  3. navigate to your `settings/general` panel.
  4. Change your Theme setting to `Evergreen`
 
+
  ### Home
- ![Evergreen-Home](screenshots/Evergreen-home.jpg)
+ ![Evergreen-Home](screenshots/evergreen-home.jpg)
 
  ### Loop
- ![Evergreen-Loop](screenshots/Evergreen-loop.jpg)
+ ![Evergreen-Loop](screenshots/evergreen-loop.jpg)
 
  ### Tag
- ![Placidity-Tag](screenshots/Evergreen-tag.jpg)
+ ![Placidity-Tag](screenshots/evergreen-tag.jpg)
 
  ### Post
- ![Evergreen-Post](screenshots/Evergreen-post.jpg)
+ ![Evergreen-Post](screenshots/evergreen-post.jpg)
 
  ### Author
- ![Evergreen-SuggestedReads](screenshots/Evergreen-author.jpg)
+ ![Evergreen-SuggestedReads](screenshots/evergreen-author.jpg)
 
 
  Details
