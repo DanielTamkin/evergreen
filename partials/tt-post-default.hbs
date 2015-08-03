@@ -1,0 +1,19 @@
+{{! post template}}
+<section id="post-content">
+  {{content}}
+  <section class="featured">
+    {{#next_post}}
+      <a href="{{url absolute="true"}}"><div class="next">next post</div></a>
+    {{/next_post}}
+    {{#prev_post}}
+      <a href="{{url absolute="true"}}"><div class="prev">previous post</div></a>
+    {{/prev_post}}
+  </section>
+</section>
+<script>
+  $offset = $("#post").outerHeight();
+  $("#site-shim").shimThis({
+    ontop: 'section.hero',
+    offset: $offset+'px'
+  });
+</script>

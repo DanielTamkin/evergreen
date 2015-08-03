@@ -1,0 +1,25 @@
+{{#if show}}
+  {{#each posts}}
+    {{#has tag=../show}}
+      {{> "tt-loop-note"}}
+    {{else}}
+      {{! show nothing }}
+    {{/has}}
+  {{/each}}
+{{else if latest}}
+{{#posts.[0]}}
+  {{> "tt-loop-settings"}}
+{{/posts.[0]}}
+{{else if ommit}}
+  {{#each posts}}
+    {{#has tag=../ommit}}
+      {{! show nothing }}
+    {{else}}
+      {{> "tt-loop-settings"}}
+    {{/has}}
+  {{/each}}
+{{else}}
+  {{#foreach posts}}
+    {{> "tt-loop-settings"}}
+  {{/foreach}}
+{{/if}}

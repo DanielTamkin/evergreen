@@ -1,0 +1,32 @@
+<article class="loop">
+  {{#if image}}
+    <header class="image" style="background: url({{image}}) no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+      <div class="wrapper">
+        <a href="{{url absolute="true"}}"><h1>{{title}}</h1></a>
+      </div>
+    </header>
+  {{else}}
+    <header>
+      <a href="{{url absolute="true"}}"><h1>{{title}}</h1></a>
+      <section class="excerpt">
+        <p>{{excerpt words="0"}}</p>
+      </section>
+    </header>
+  {{/if}}
+  <footer>
+    <div class="author">
+      {{#author}}
+        {{#if image}}
+          <div class="image"><img src="{{image}}"/></div>
+        {{/if}}
+        <p><a href="{{url}}">{{name}}</a>, </br>
+      {{/author}}
+      {{date format="MMMM DD, YYYY"}}</p>
+    </div>
+    <div class="tags">
+      <p>
+        {{> "tt-tags" seporator="  "}}
+      </p>
+    </div>
+  </footer>
+</article>

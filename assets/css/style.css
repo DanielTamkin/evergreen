@@ -306,6 +306,11 @@ p a:hover{
 		background:#263238;
 		color:#fff;
 	}
+	#loop article.note header{
+		padding:1em;
+		background:#fff;
+		color:#000;
+	}
 	#loop article header h1{
 		font-family:'Lato-Bold';
 	}
@@ -330,6 +335,91 @@ p a:hover{
 		color:rgba(255, 255, 255, 0.43);
 		line-height:1.6;
 		font-size:1em;
+	}
+	#loop article.note header p{
+		margin-top:16px;
+		margin-left:6px;
+		line-height:0;
+		color:rgba(0, 0, 0, 0.61);
+	}
+	#loop article.note section.content{
+		margin:1em;
+	}
+	#loop article.note section.content p{
+		margin:0.9em 0;
+		line-height:1.4;
+		font-size:1.3em;
+	}
+	#loop article.note section.content img{
+		margin:1.6em auto;
+		height:auto;
+		max-height:600px;
+		max-width:100%;
+		position:relative;
+	}
+	#loop article.note section.content ul{margin-left:2px;}
+	#loop article.note section.content ul li{margin-left:5px;position:relative;}
+	#loop article.note section.content ul li:before{
+		content:'-';
+		left:-4px;
+		position:relative;
+	}
+	#loop article.note section.content ol{margin-left:10px;list-style:lower-alpha;}
+	#loop article.note section.content ol li{margin-left:10px;}
+	#loop article.note section.content h1{font-size:4em;}
+	#loop article.note section.content h2{font-size:3.7em;}
+	#loop article.note section.content h3{font-size:3.4em;}
+	#loop article.note section.content h4{font-size:2.7em;}
+	#loop article.note section.content h5{font-size:2.4em;}
+	#loop article.note section.content h6{font-size:1.7em;}
+	#loop article.note section.content i{text-decoration:italic;}
+	#loop article.note section.content strong{font-family:'Raleway-Bold';}
+	#loop article.note section.content hr{margin:2em auto;max-width:400px;height:3px;border:none;border-top:3px solid #0c1b1b;}
+	#loop article.note section.content code{
+		padding:1px 3px;
+		background:#efefef;
+		border-radius:4px;
+		border:1px solid rgba(101, 99, 99, 0.1);
+	}
+	#loop article.note section.content blockquote{
+		margin:10px 15px;
+		position:relative;
+		text-align:center;
+	}
+	#loop article.note section.content blockquote p{
+		display:inline-block;
+		font-family:'Lato-Bold';
+		font-size:2em;
+	}
+	#loop article.note section.content blockquote:before{
+		content:'"';
+		font-size:3.5em;
+		position:relative;
+		top:10px;
+		left:0;
+		opacity:0.7;
+	}
+	#loop article.note section.content blockquote:after{
+		content:'"';
+		font-size:3.5em;
+		position:relative;
+		top:10px;
+		right:0;
+		opacity:0.7;
+	}
+	#loop article.note section.content .featured{
+		padding:0.9em 1em;
+		padding-top:2.1em;
+	}
+	#loop article.note section.content .featured div{
+		font-size:14px;
+		font-family:'Lato-Black';
+	}
+	#loop article.note section.content .featured .prev{
+		float:right;
+	}
+	#loop article.note section.content .featured .next{
+		float:left;
 	}
 	#loop article footer{
 		padding:0.4em 0.6em;
@@ -368,7 +458,6 @@ p a:hover{
 		float:right;
 		opacity:0.6;
 	}
-
 /*> pagination*/
 	#pagination{
 		margin:1em 0;

@@ -1,0 +1,14 @@
+<script>
+  function redirect() {
+    var fullHref     = window.location.href,
+        host         = window.location.host,
+        protocol     = window.location.protocol,
+        splitAddress = protocol+"//"+host+"/",
+        newHref      = splitAddress+"tag/notes/"
+        /*indexOf      = fullHref.indexOf(splitAddress),
+        splitURI     = fullHref.replace(splitAddress, "");
+        splitURI      =*/
+    window.location.href = newHref;
+  }
+  redirect();
+</script>

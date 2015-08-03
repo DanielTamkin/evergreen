@@ -1,0 +1,10 @@
+{{#has tag="!note"}}
+  {{! dont show anything.}}
+{{else}}
+  {{#if seporator}}
+    {{#foreach tags}}
+      {{! style how you would like to show the tags}}
+       <a href="{{url absolute="true"}}">{{name}}</a> {{../seporator}}
+    {{/foreach}}
+  {{/if}}
+{{/has}}

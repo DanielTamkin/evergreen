@@ -1,7 +1,12 @@
 {{!< default}}
 {{! author template}}
 {{> "shim"}}
-{{> "loop"}}
+<section id="loop" class="shim">
+  {{> "tt-loop" ommit="!note"}}
+  {{#if posts}}
+    {{pagination}}
+  {{/if}}
+</section>
 <script>
   $offset = $("#author").outerHeight();
   $("#site-shim").shimThis({
