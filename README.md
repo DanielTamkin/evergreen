@@ -41,7 +41,7 @@ Just add the note tage (`!note`) and your done!
  ---
  | Fonts  | jQuery plugins |
  | ------------- | ------------- |
- | [Lato](https://www.google.com/fonts#UsePlace:use/Collection:Lato)  | [shimThis.js](https://github.com/DanielTamkin/AnchorSlide.js)  |
+ | [Lato](https://www.google.com/fonts#UsePlace:use/Collection:Lato)  | [shimThis.js](https://github.com/DanielTamkin/shimThis.js)  |
  | [Raleway](https://www.google.com/fonts#UsePlace:use/Collection:Raleway)  | [centerThis.js](https://github.com/DanielTamkin/centerThis.js) |
  || [AnchorSlide.js](https://github.com/DanielTamkin/AnchorSlide.js) |
 
